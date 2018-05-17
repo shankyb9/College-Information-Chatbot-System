@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+<category><pattern>*</pattern>
+<template>
+No match
+</template>
+</category>
+
+<category>
+<pattern>NOT</pattern>
+<template>
+	Not what?
+</template>
+</category>
+
+<category>
+<pattern>HE</pattern>
+<template>
+	He what?
+</template>
+</category>
+
+<category><pattern>COLLEGE NAME</pattern>
+<template>
+<random>
+	<li>Did you forget? It is: Shri Ramdeobaba College Of Engineering and Management(RCOEM)</li>
+	<li>Trying to test me? LOL! It is: Shri Ramdeobaba College Of Engineering and Management(RCOEM)</li>
+	<li>Our College name is: Shri Ramdeobaba College Of Engineering and Management(RCOEM)</li>
+</random>
+</template>
+</category>
+
+<category><pattern>WHAT IS OUR COLLEGE NAME</pattern>
+<template>
+<srai>COLLEGE NAME</srai>
+</template>
+</category>
+<category><pattern>COLLEGE</pattern>
+<template>
+<srai>COLLEGE NAME</srai>
+</template>
+</category>
+<category><pattern>OUR COLLEGE NAME</pattern>
+<template>
+<srai>COLLEGE NAME</srai>
+</template>
+</category>
+<category><pattern>OUR COLLEGE</pattern>
+<template>
+<srai>COLLEGE NAME</srai>
+</template>
+</category>
+
+<category><pattern>MALE</pattern>
+<template>
+<set name="gender">MALE</set>
+</template>
+</category>
+<category><pattern>FEMALE</pattern>
+<template>
+<set name="gender">FEMALE</set>
+</template>
+</category>
+<category><pattern>HOW ARE YOU</pattern>
+<template>I am fine! What about you?</template>
+</category>
+
+<category><pattern>THANK YOU</pattern>
+<template>
+<random>
+	<li>The pleasure is mine!</li>
+	<li>Anytime!</li>
+	<li>You are welcome!</li>
+</random>
+</template>
+</category>
+<category><pattern>THANK</pattern>
+<template>
+<srai>
+THANK YOU
+</srai>
+</template>
+</category>
+<category><pattern>THANKS *</pattern>
+<template>
+<srai>
+THANK YOU
+</srai>
+</template>
+</category>
+<category><pattern>THNKX</pattern>
+<template>
+<srai>
+THANK YOU
+</srai>
+</template>
+</category>
+<category><pattern>THNX</pattern>
+<template>
+<srai>
+THANK YOU
+</srai>
+</template>
+</category>
+</aiml>

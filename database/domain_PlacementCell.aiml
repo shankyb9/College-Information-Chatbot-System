@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml version="1.0">
+
+<meta name="language" content="en"/>
+
+	<category>
+      <pattern>HIGHEST PACKAGE LAST YEAR</pattern>
+      <template>
+		<random>
+			<li>Adobe offered a package of 20 LPA last year</li>
+			<li>The highest package of 20 LPA was offered by Adobe last year</li>
+			<li>Maximum package of last year was 20 LPA which was offered by Adobe</li>
+		</random>
+	  </template>
+    </category>
+	<category>
+      <pattern>AVERAGE PLACEMENT RATE</pattern>
+      <template>
+		<random>
+			<li>RCOEM has a average of 80% placement</li>
+			<li>Average placement of last 10 years is around 80%</li>
+			<li>RCOEM has consistently achieved an average of around 80% placement for the last 10 years</li>
+		</random>
+	  </template>
+    </category>
+	<category>
+      <pattern>MILESTONES 2016 BATCH</pattern>
+      <template>
+		<random>
+			<li>Click on this link to view the milestones of 2016 Batch : http://www.rknec.edu/Placement/Placements.aspx</li>
+			<li>Please goto this link to view milestones of 2016 Batch : http://www.rknec.edu/Placement/Placements.aspx</li>
+			<li>Have a look over here to know more about milestones of 2016 Batch : http://www.rknec.edu/Placement/Placements.aspx</li>
+		</random>
+	  </template>
+    </category>
+	<category>
+      <pattern>MILESTONES 2017 BATCH</pattern>
+      <template>
+		<random>
+			<li>Click on this link to view the milestones of 2017 Batch : http://www.rknec.edu/Placement/Placements.aspx</li>
+			<li>Please goto this link to view milestones of 2017 Batch : http://www.rknec.edu/Placement/Placements.aspx</li>
+			<li>Have a look over here to know more about milestones of 2017 Batch : http://www.rknec.edu/Placement/Placements.aspx</li>
+		</random>
+	  </template>
+    </category>
+	<category>
+      <pattern>MILESTONES 2015 BATCH</pattern>
+      <template>
+		<random>
+			<li>Click on this link to view the milestones of 2015 Batch : http://www.rknec.edu/Placement/Placements.aspx</li>
+			<li>Please goto this link to view milestones of 2015 Batch : http://www.rknec.edu/Placement/Placements.aspx</li>
+			<li>Have a look over here to know more about milestones of 2015 Batch : http://www.rknec.edu/Placement/Placements.aspx</li>
+		</random>
+	  </template>
+    </category>
+	<category>
+      <pattern>MILESTONES 2014 BATCH</pattern>
+      <template>
+		<random>
+			<li>Click on this link to view the milestones of 2014 Batch : http://www.rknec.edu/Placement/Placements.aspx</li>
+			<li>Please goto this link to view milestones of 2014 Batch : http://www.rknec.edu/Placement/Placements.aspx</li>
+			<li>Have a look over here to know more about milestones of 2014 Batch : http://www.rknec.edu/Placement/Placements.aspx</li>
+		</random>
+	  </template>
+    </category>
+	<category>
+      <pattern>MILESTONES 2013 BATCH</pattern>
+      <template>
+	  Total 191 Selections by Accenture –Highest number of DAY-1 Selections by Accenture in Maharashtra for the 2013 Batch 
+	  </template>
+    </category>
+	<category>
+      <pattern>INFOSYS CAMPUS CONNECT</pattern>
+      <template>
+		<random>
+			<li>Click on this link to view the details of Infosys Campus Connect Programme : http://www.rknec.edu/Placement/Industryinitiatives.aspx</li>
+			<li>Please goto this link to view the details of Infosys Campus Connect Programme : http://www.rknec.edu/Placement/Industryinitiatives.aspx</li>
+			<li>Have a look over here to know more about the Infosys Campus Connect Programme : http://www.rknec.edu/Placement/Industryinitiatives.aspx</li>
+		</random>
+	  </template>
+    </category>
+	<category>
+      <pattern>ACCENTURE HEAD START</pattern>
+      <template>
+		<random>
+			<li>Click on this link to view the details of Accenture Head Start Programme : http://www.rknec.edu/Placement/Industryinitiatives.aspx</li>
+			<li>Please goto this link to view the details of Accenture Head Start Programme : http://www.rknec.edu/Placement/Industryinitiatives.aspx</li>
+			<li>Have a look over here to know more about the Accenture Head Start Programme : http://www.rknec.edu/Placement/Industryinitiatives.aspx</li>
+		</random>
+	  </template>
+    </category>
+	<category>
+      <pattern>ITC INFOTECH CAMPUS CONNECT</pattern>
+      <template>
+		<random>
+			<li>Click on this link to view the details of ITC Infotech Campus Connect Programme : http://www.rknec.edu/Placement/Industryinitiatives.aspx</li>
+			<li>Please goto this link to view the details of ITC Infotech Campus Connect Programme : http://www.rknec.edu/Placement/Industryinitiatives.aspx</li>
+			<li>Have a look over here to know more about the ITC Infotech Campus Connect Programme : http://www.rknec.edu/Placement/Industryinitiatives.aspx</li>
+		</random>
+	  </template>
+    </category>
+	<category>
+      <pattern>CORE COMPANIES RECRUITED 5 YEARS</pattern>
+      <template>
+		<random>
+			<li>Click on this link to view the core companies that recruited from RCOEM : http://www.rknec.edu/Placement/Placements.aspx</li>
+			<li>Please goto this link to view the core companies that recruited from RCOEM : http://www.rknec.edu/Placement/Placements.aspx</li>
+			<li>Have a look over here to know more about the core companies that recruited from RCOEM : http://www.rknec.edu/Placement/Placements.aspx</li>
+		</random>
+	  </template>
+    </category>
+	<category>
+      <pattern>IT COMPANIES RECRUITED 5 YEARS</pattern>
+      <template>
+		<random>
+			<li>Click on this link to view the IT companies that recruited from RCOEM : http://www.rknec.edu/Placement/Placements.aspx</li>
+			<li>Please goto this link to view the IT companies that recruited from RCOEM : http://www.rknec.edu/Placement/Placements.aspx</li>
+			<li>Have a look over here to know more about the IT  companies that recruited from RCOEM : http://www.rknec.edu/Placement/Placements.aspx</li>
+		</random>
+	  </template>
+    </category>
+	<category>
+      <pattern>WIPRO JUMP START </pattern>
+      <template>
+		<random>
+			<li>Click on this link to view the details of Wipro Jump Start Programme : http://www.rknec.edu/Placement/Industryinitiatives.aspx</li>
+			<li>Please goto this link to view the details of Wipro Jump Start Programme : http://www.rknec.edu/Placement/Industryinitiatives.aspx</li>
+			<li>Have a look over here to know more about the Wipro Jump Start Programme : http://www.rknec.edu/Placement/Industryinitiatives.aspx</li>
+		</random>
+	  </template>
+    </category>
+	<category>
+      <pattern>PROCEDURE TRAINING PLACEMENT RECRUITMENT</pattern>
+      <template>
+		<random>
+			<li>Click on this link to view the procedure followed by T and P department : http://www.rknec.edu/Placement/Placements.aspx</li>
+			<li>Please goto this link to view the procedure followed by T and P department : http://www.rknec.edu/Placement/Placements.aspx</li>
+			<li>Have a look over here to know more about the procedure followed by T and P department : http://www.rknec.edu/Placement/Placements.aspx</li>
+		</random>
+	  </template>
+    </category>
+	<category>
+      <pattern>TRAINING PLACEMENT</pattern>
+      <template>
+		<random>
+			<li>Click on this link to know more about T and P department : http://www.rknec.edu/Placement/Placements.aspx</li>
+			<li>Please goto this link to know more about T and P department : http://www.rknec.edu/Placement/Placements.aspx</li>
+			<li>Have a look over here to know more about T and P department : http://www.rknec.edu/Placement/Placements.aspx</li>
+		</random>
+	  </template>
+    </category>
+	
+	<category>
+      <pattern>PLACEMENT STATISTICS</pattern>
+      <template>
+		<random>
+			<li>Click on this link to view the placement statistics : http://www.rknec.edu/Placement/Placements.aspx</li>
+			<li>Please goto this link to view placement statistics : http://www.rknec.edu/Placement/Placements.aspx</li>
+			<li>Have a look over here to know more about the placement statistics : http://www.rknec.edu/Placement/Placements.aspx</li>
+		</random>
+	  </template>
+    </category>
+	<category>
+      <pattern>RECRUITING COMPANIES</pattern>
+      <template>
+		<random>
+			<li>Click on this link to view the recruiting companies visiting RCOEM: http://www.rknec.edu/Placement/Placements.aspx</li>
+			<li>Please goto this link to view the recruiting companies visiting RCOEM : http://www.rknec.edu/Placement/Placements.aspx</li>
+			<li>Have a look over here to view the recruiting companies visiting RCOEM : http://www.rknec.edu/Placement/Placements.aspx</li>
+		</random>
+	  </template>
+    </category>
+	</aiml>
+	
+	

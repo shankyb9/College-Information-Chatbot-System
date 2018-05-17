@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml version="1.0">
+
+<meta name="language" content="en"/>
+
+   <category>
+      <pattern>NOTICE REGARDING EBC CONCESSION</pattern>
+    <template> Notice of E.B.C Concession only for Maharashtra state CAP open catgerory Students  .You can find the notice regarding E.B.C. Concession from the link: http://www.rknec.edu/Docs/Notice%20Board/2018/EBC-17-18127.pdf 
+</template>
+    </category>      
+
+   <category>
+      <pattern>EBC CONCESSION</pattern>
+    <template> Notice of E.B.C Concession only for Maharashtra state CAP open catgerory Students  .You can find the notice regarding E.B.C. Concession from the link: http://www.rknec.edu/Docs/Notice%20Board/2018/EBC-17-18127.pdf 
+</template>
+    </category>  
+
+   <category>
+      <pattern>NOTICE REGARDING PG COURSE RE REGISTRATION</pattern>
+    <template>Notice - Guidelines for PG Course Re-registration.You can read the full notice from the given link. http://www.rknec.edu/Docs/Notice%20Board/2018/Notice%20for%20Re-registration%20of%20back-log%20courses.pdf
+
+</template>
+    </category>      
+   <category>
+      <pattern>PG COURSE RE REGISTRATION</pattern>
+    <template>Notice - Guidelines for PG Course Re-registration.You can read the full notice from the given link. 
+ http://www.rknec.edu/Docs/Notice%20Board/2018/Notice%20for%20Re-registration%20of%20back-log%20courses.pdf
+
+</template>
+    </category>
+
+
+   <category>
+      <pattern>ASSISTANCE STUDENTS INTERNSHIPS PLACEMENT</pattern>
+    <template> AICTE in collaboration with youth4work has signed an MOU to provide support and assistance to students of Technical Institutes to get Learning, internship and Placement opportunities. Under the agreement the tests, profiling and JOB/Internship opportunities is made completely FREE for all students and colleges.Read the full notice from the given link.
+http://www.rknec.edu/Docs/Notice%20Board/2018/aicte_mou_youth4work_12_9_17.pdf
+
+</template>
+    </category>      
+   <category>
+      <pattern>INTERNSHIPS</pattern>
+    <template> AICTE in collaboration with youth4work has signed an MOU to provide support and assistance to students of Technical Institutes to get Learning, internship and Placement opportunities. Under the agreement the tests, profiling and JOB/Internship opportunities is made completely FREE for all students and colleges.Read the full notice from the given link.
+http://www.rknec.edu/Docs/Notice%20Board/2018/aicte_mou_youth4work_12_9_17.pdf
+
+</template>
+    </category>      
+	<category>
+      <pattern>INTERNSHIP</pattern>
+    <template> AICTE in collaboration with youth4work has signed an MOU to provide support and assistance to students of Technical Institutes to get Learning, internship and Placement opportunities. Under the agreement the tests, profiling and JOB/Internship opportunities is made completely FREE for all students and colleges.Read the full notice from the given link.
+http://www.rknec.edu/Docs/Notice%20Board/2018/aicte_mou_youth4work_12_9_17.pdf
+
+</template>
+    </category> 
+   <category>
+      <pattern>PLACEMENTS</pattern>
+    <template> AICTE in collaboration with youth4work has signed an MOU to provide support and assistance to students of Technical Institutes to get Learning, internship and Placement opportunities. Under the agreement the tests, profiling and JOB/Internship opportunities is made completely FREE for all students and colleges.Read the full notice from the given link.
+http://www.rknec.edu/Docs/Notice%20Board/2018/aicte_mou_youth4work_12_9_17.pdf
+
+</template>
+</category>
+<category>
+      <pattern>PLACEMENT</pattern>
+    <template> AICTE in collaboration with youth4work has signed an MOU to provide support and assistance to students of Technical Institutes to get Learning, internship and Placement opportunities. Under the agreement the tests, profiling and JOB/Internship opportunities is made completely FREE for all students and colleges.Read the full notice from the given link.
+http://www.rknec.edu/Docs/Notice%20Board/2018/aicte_mou_youth4work_12_9_17.pdf
+
+</template>
+    </category>      
+<category>
+      <pattern>ASSISTANCE INTERNSHIP PLACEMENT</pattern>
+    <template> AICTE in collaboration with youth4work has signed an MOU to provide support and assistance to students of Technical Institutes to get Learning, internship and Placement opportunities. Under the agreement the tests, profiling and JOB/Internship opportunities is made completely FREE for all students and colleges.Read the full notice from the given link.
+http://www.rknec.edu/Docs/Notice%20Board/2018/aicte_mou_youth4work_12_9_17.pdf
+
+</template>
+    </category>      
+
+<category>
+      <pattern>FEES ACADEMIC YEAR 2017-2018</pattern>
+    <template> Notice - Final fees Approved by fee Regulating Authority for the Academic year 2017-18 is given in the following pdf. To get the pdf follow the link.
+http://www.rknec.edu/Docs/Notice%20Board/2017/Fees-2017-18126.pdf
+</template>
+    </category>    
+<category>
+      <pattern>FEES 2017-2018</pattern>
+    <template> Notice - Final fees Approved by fee Regulating Authority for the Academic year 2017-18 is given in the following pdf. To get the pdf follow the link. http://www.rknec.edu/Docs/Notice%20Board/2017/Fees-2017-18126.pdf
+</template>
+    </category>      
+	
+	<category>
+      <pattern>DOCTORAL PROGRAMME</pattern>
+    <template><random><li> NOTIFICATION FOR ADMISSION TO DOCTORAL PROGRAMME UNDER RTM NAGPUR UNIVERSITY is given in the following pdf. Follow the link to get the details. Http://Www.Rknec.Edu/Docs/Notice%20board/2017/1st%20notification%20dated%2027nov2017%20for%20email.Pdf
+</li><li> Application form for PhD Programmes is available for download.You can download from the link given below:
+
+http://www.rknec.edu/R%20and%20D/Docs/Application%20form%20for%20PhD%20Program%202017-2018.pdf
+</li><li>  Application form Visveswraya PhD Scheme 2017-18 is available for download. To download follow the given link.
+http://www.rknec.edu/R%20and%20D/Docs/Application%20form%20Visvesaraya%20PhD%20Scheme%202017-2018.pdf
+</li></random></template>
+
+    </category>      
+   
+<category>
+      <pattern>MTECH ELECTIVES SECOND SEMESTER</pattern>
+    <template><random><li>Notice of Open Electives for M.Tech Programmes Sem-II 2017-18. Click the link to download.
+
+http://www.rknec.edu/Docs/Notice%20Board/2017/Notice%20for%20Allotment%20of%20Open%20Electives%20to%20M.Tech%20Sem-I%20Students%20for%20Sem-II%202017-18.pdf
+</li><li> To  See Option Form Click on the link.
+http://www.rknec.edu/Docs/Notice%20Board/2017/M.Tech%20Open%20Elective%20Option%20form_2017-18.pdf
+</li></random> </template>
+    </category>      
+
+<category>
+      <pattern>FREESHIP SCHOLARSHIP EBC STATE MINORITIES</pattern>
+    <template> Notice for Scholership, Freeship, E.B.C. and State Minority of academic session 2017-18 is given in the following link.
+http://www.rknec.edu/Docs/Notice%20Board/2017/Schol-fee-EBC17-18.pdf
+
+</template>
+    </category>    
+
+<category>
+      <pattern>FREESHIP</pattern>
+    <template> Notice for Scholership, Freeship, E.B.C. and State Minority of academic session 2017-18 is given in the following link.
+http://www.rknec.edu/Docs/Notice%20Board/2017/Schol-fee-EBC17-18.pdf
+
+</template>
+    </category>    
+
+<category>
+      <pattern>SCHOLARSHIP</pattern>
+    <template> Notice for Scholership, Freeship, E.B.C. and State Minority of academic session 2017-18 is given in the following link.
+http://www.rknec.edu/Docs/Notice%20Board/2017/Schol-fee-EBC17-18.pdf
+
+</template>
+    </category>    
+
+<category>
+      <pattern>EBC</pattern>
+    <template> Notice for Scholership, Freeship, E.B.C. and State Minority of academic session 2017-18 is given in the following link.
+http://www.rknec.edu/Docs/Notice%20Board/2017/Schol-fee-EBC17-18.pdf
+
+</template>
+    </category>    
+<category>
+      <pattern>STATE MINORITIES</pattern>
+    <template> Notice for Scholership, Freeship, E.B.C. and State Minority of academic session 2017-18 is given in the following link.
+http://www.rknec.edu/Docs/Notice%20Board/2017/Schol-fee-EBC17-18.pdf
+
+</template>
+    </category>    
+	
+<category>
+      <pattern>MAXIMUM ATTEMPTS SEMESTER</pattern>
+    <template> Notice for Maximum Number of attempts for courses closed in a semester is given in the following link.
+http://www.rknec.edu/Docs/Notice%20Board/2017/semAttempts123.jpg.
+
+</template>
+    </category>
+	
+<category>
+      <pattern>LIBRARY BOOK BANK SCHEME</pattern>
+    <template> To read the full Notice for College Library Book Bank Scheme follow the link.
+http://www.rknec.edu/Docs/Notice%20Board/2017/Book%20Bank%20Notice.pdf
+
+</template>
+    </category>   
+	
+<category>
+      <pattern>SCHOLARSHIP RENEWAL FRESH RENEWAL STUDENTS</pattern>
+    <template> To read Notice of Scholarship renewal notification for Fresh and Renewal Students  please follow the link.
+http://www.rknec.edu/Docs/Notice%20Board/2017/Scholarship%20renewal%20notifiction.pdf
+</template>
+    </category>    
+<category>
+      <pattern>SCHOLARSHIP RENEWAL</pattern>
+    <template> To read Notice of Scholarship renewal notification for Fresh and Renewal Students  please follow the link.
+http://www.rknec.edu/Docs/Notice%20Board/2017/Scholarship%20renewal%20notifiction.pdf
+</template>
+    </category>
+	
+<category>
+      <pattern>PERSON DISABILITY</pattern>
+    <template> To read full Notice for person with disability  please follow the link.
+http://www.rknec.edu/Docs/Notice%20Board/2017/Notice%2008-08-17-I%20Year.pdf
+
+</template>
+    </category>    
+	
+<category>
+      <pattern>DIRECTION GOVERNING FACILILTIES PERSONS DISABILITIES</pattern>
+    <template> Notice of Direction Governing Facililties to be extended to Persons with disabilities is given in the following document. To read it please follow the link. http://www.rknec.edu/Docs/Notice%20Board/2017/Direction%20Governing%20Facililties%20to%20Persons%20with%20disabilities.pdf
+
+</template>
+    </category>    
+	
+<category>
+      <pattern>TWO-WHEELERS DRIVING LICENSE HELMET</pattern>
+    <template> Notice for All two-wheelers (Teaching, Non-Teaching members and Students) of College should have valid Driving License with them and must wear Helmet compulsorily. The complete notice is available at the given link.
+http://www.rknec.edu/Docs/Notice%20Board/2016/Helmat%20compulsaory%20Notice%20dt%2029.7.16.pdf
+
+
+</template>
+    </category>    
+<category>
+      <pattern>DRIVING LICENSE</pattern>
+    <template> Notice for All two-wheelers (Teaching, Non-Teaching members and Students) of College should have valid Driving License with them and must wear Helmet compulsorily. The complete notice is available at the given link.
+http://www.rknec.edu/Docs/Notice%20Board/2016/Helmat%20compulsaory%20Notice%20dt%2029.7.16.pdf
+
+
+</template>
+    </category>    
+<category>
+      <pattern>HELMET</pattern>
+    <template> Notice for All two-wheelers (Teaching, Non-Teaching members and Students) of College should have valid Driving License with them and must wear Helmet compulsorily. The complete notice is available at the given link.
+http://www.rknec.edu/Docs/Notice%20Board/2016/Helmat%20compulsaory%20Notice%20dt%2029.7.16.pdf
+
+
+</template>
+    </category>    
+<category>
+      <pattern>UGC ANTI RAGGING REGULATION</pattern>
+    <template> Notice regarding UGC anti ragging regulation is available at the following link.
+http://www.rknec.edu/Docs/Notice%20Board/2016/ANTIRAGGING%20REGULATION%202009.pdf
+</template>
+    </category>  
+
+<category>
+      <pattern>CURBING MENACE RAGGING</pattern>
+    <template> Ragging is a menace, so college has released a notice regarding this.Notice regarding Curbing the Menace of Ragging is available at the following link.
+http://www.rknec.edu/Docs/Notice%20Board/2016/Curbing%20Menace%20of%20Ragging.pdf
+</template>
+    </category>      
+<category>
+      <pattern>RAGGING</pattern>
+    <template> Ragging is a menace, so college has released a notice regarding this.Notice regarding Curbing the Menace of Ragging is available at the following link.
+http://www.rknec.edu/Docs/Notice%20Board/2016/Curbing%20Menace%20of%20Ragging.pdf
+</template>
+    </category>    
+     
+
+</aiml>

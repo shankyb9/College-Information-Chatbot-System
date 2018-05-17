@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml version="1.0">
+
+<meta name="language" content="en"/>
+   
+   <category>
+      <pattern>ACADEMICS</pattern>
+    <template> Academics consists of Programmes (UG,PG,PhD), Academic Calendar, Syllabus, Open Electives, Ordinances, Academic Council, Dean Academics, Board of Studies and Library.
+Link: http://www.rknec.edu/Academics/Academics.aspx 
+</template>
+    </category>      
+
+   <category>
+      <pattern>UNDERGRADUATE PROGRAMMES</pattern>
+    <template> To know Different UG Programmes available follow the link
+     Link: http://www.rknec.edu/Academics/Programme/Programme-UG.aspx
+ 
+</template>
+    </category>      
+
+   <category>
+      <pattern>UG PROGRAMMES</pattern>
+    <template> To know Different UG Programmes available follow the link
+     Link: http://www.rknec.edu/Academics/Programme/Programme-UG.aspx
+ 
+</template>
+    </category>
+
+   <category>
+      <pattern>POSTGRADUATE PROGRAMMES</pattern>
+    <template>To know Different PG Programmes available follow the link 
+
+    Link: http://www.rknec.edu/Academics/Programme/Programme-PG.aspx
+</template>
+    </category>      
+
+
+   <category>
+      <pattern>PG PROGRAMMES</pattern>
+    <template>To know Different PG Programmes available follow the link 
+
+    Link: http://www.rknec.edu/Academics/Programme/Programme-PG.aspx
+</template>
+    </category>      
+  
+
+   <category>
+      <pattern>PHD PROGRAMMES</pattern>
+    <template>To know Different PhD Programmes available follow the link 
+     Link: http://www.rknec.edu/R%20and%20D/PhD-Programme.aspx
+
+</template>
+    </category>     
+ <category>
+      <pattern>DOCTORAL PROGRAMMES</pattern>
+    <template>To know Different PhD Programmes available follow the link 
+     Link: http://www.rknec.edu/R%20and%20D/PhD-Programme.aspx
+
+</template>
+    </category>  
+
+   <category>
+      <pattern>DOCTOR PHILOSOPHY</pattern>
+    <template>Notice - Guidelines for PG Course Re-registration.You can read the full notice from the given link. 
+ http://www.rknec.edu/Docs/Notice%20Board/2018/Notice%20for%20Re-registration%20of%20back-log%20courses.pdf
+
+</template>
+    </category>      
+
+   <category>
+
+      <pattern>OPEN ELECTIVE</pattern>
+    <template> Different Open Electives available are 
+Open electives offered by Department of Applied Sciences
+    Combinatorial Theories MAT 301 
+    Numerical Techniques MAT 302 
+    Nanotechnology PHT302 
+    Solid State Lighting PHT303 
+    Employability skills for engineers HUT 300-1 
+    Statistical Methods for Business and Management MAT 303 
+    Challenges of Human Resource Development HUT300-2 
+    Orientation in German Language HUT300-4 
+    Non Conventional Energy Sources and Environmental Pollution CHT300-2 
+    Psychology for Professional Growth HUT300-3 
+    Quantum Mechanics for Engineers PHT301 
+Open electives offered by Department of Management Technology 
+    Financial Management MBT610-1 
+    Innovation and Entrepreneurship MBT610-3 
+    Entrepreneurship Development MBT610-2 
+Open electives offered by Department of Computer Applications 
+    Introduction to Object Oriented Programming MCT-300 
+
+
+
+
+</template>
+    </category>      
+
+
+
+   <category>
+
+      <pattern>OPEN ELECTIVES</pattern>
+    <template> Different Open Electives available are 
+Open electives offered by Department of Applied Sciences
+    Combinatorial Theories MAT 301 
+    Numerical Techniques MAT 302 
+    Nanotechnology PHT302 
+    Solid State Lighting PHT303 
+    Employability skills for engineers HUT 300-1 
+    Statistical Methods for Business and Management MAT 303 
+    Challenges of Human Resource Development HUT300-2 
+    Orientation in German Language HUT300-4 
+    Non Conventional Energy Sources and Environmental Pollution CHT300-2 
+    Psychology for Professional Growth HUT300-3 
+    Quantum Mechanics for Engineers PHT301 
+Open electives offered by Department of Management Technology 
+    Financial Management MBT610-1 
+    Innovation and Entrepreneurship MBT610-3 
+    Entrepreneurship Development MBT610-2 
+Open electives offered by Department of Computer Applications 
+    Introduction to Object Oriented Programming MCT-300 
+
+
+
+
+</template>
+    </category>      
+
+   <category>
+      <pattern>SYLLABUS</pattern>
+    <template> For Open Electives follow the link :
+		http://www.rknec.edu/Academics/OpenElectives.aspx
+</template>
+    </category>      
+   <category>
+      <pattern>MEMBERS ACADEMIC COUNCIL</pattern>
+    <template> To know about the members of academic council follow the link
+ 
+
+Link: http://www.rknec.edu/Imp%20Links/AcademicCouncil.aspx
+
+
+
+</template>
+    </category>
+   <category>
+      <pattern>BOARD STUDIES</pattern>
+    <template> To know about Board of Studies follow the link below..
+
+Link: http://www.rknec.edu/Imp%20Links/BOS.aspx
+
+
+</template>
+    </category>
+      
+<category>
+      <pattern>CENTRAL LIBRARY</pattern>
+    <template> Central Library
+Welcome to the Library of Shri Ramdeobaba College of Engineering and Management. It was established in the year 1984. It is regarded as the best technical Library. It serves as a knowledge hub containing resources not only in the form of print but also in e-resources .The library aims at developing a comprehensive collection of documents that is useful for the faculty and students in their education and research activities in the institute. The Library is open to all students and staff members from 8.00 am to 8.00 pm on all working days. There is a rich collection of volumes of textbooks, reference books, National and International Journals in all branches of Engineering, Science, Technology, Management and General Studies. The Library makes efforts to increase this collection. These Books are classified according to UDC classification scheme and open access system is followed in the Library. 
+ 
+
+
+ 
+ To know more please follow the link given below:
+
+Link: http://www.rknec.edu/Academics/Library/CentralLibrary.aspx
+
+
+
+</template>
+    </category>  
+
+
+
+<category>
+<pattern>ACADEMIC CALENDAR BE</pattern>
+<template> You can get the academic calendar for BE from the link given below 
+http://www.rknec.edu/Academics/AcademicCalender/2017-18/Even/BE,%20M.Tech%20and%20MCA%20Version3.pdf
+
+</template>
+</category>
+<category>
+<pattern>ACADEMIC CALENDAR MTECH</pattern>
+<template> You can get the academic calendar for MTECH from the link given below 
+http://www.rknec.edu/Academics/AcademicCalender/2017-18/Even/BE,%20M.Tech%20and%20MCA%20Version3.pdf
+
+</template>
+</category>
+<category>
+<pattern>ACADEMIC CALENDAR MCA</pattern>
+<template> You can get the academic calendar for MCA from the link given below 
+http://www.rknec.edu/Academics/AcademicCalender/2017-18/Even/BE,%20M.Tech%20and%20MCA%20Version3.pdf
+
+</template>
+</category>
+<category>
+<pattern>ACADEMIC CALENDAR MBA INTEGRATED</pattern>
+<template> You can get the academic calendar FOR MBA INTEGRATED from the link given below 
+http://www.rknec.edu/Academics/AcademicCalender/2017-18/Even/MBA%20version3.pdf
+
+
+</template>
+</category>
+<category>
+<pattern>ACADEMIC CALENDAR BE FIRST SEMESTER</pattern>
+<template> You can get the academic calendar FOR BE FIRST SEMESTER from the link given below 
+http://www.rknec.edu/Academics/AcademicCalender/2017-18/ODD/REVISED%20ACADEMIC%20CALENDER%20B.E.%20Sem-I,%202017-18%20Odd%20Sem.pdf
+
+
+
+</template>
+</category>
+<category>
+<pattern>ACADEMIC CALENDAR MTECH FIRST SEMESTER</pattern>
+<template> You can get the academic calendar FOR MTECH FIRST SEMESTER from the link given below 
+http://www.rknec.edu/Academics/AcademicCalender/2017-18/ODD/REVISED%20ACADEMIC%20CALENDER%20M.Tech%20Sem-I,%202017-18%20Odd%20Sem.pdf
+</template>
+</category>
+<category>
+<pattern>ACADEMIC CALENDAR MCA FIRST SEMESTER</pattern>
+<template> You can get the academic calendar FOR MCA FIRST SEMESTER from the link given below 
+http://www.rknec.edu/Academics/AcademicCalender/2017-18/ODD/BE-Sem1.pdf
+
+</template>
+</category>
+<category>
+<pattern>ACADEMIC CALENDAR MBA INTEGRATED</pattern>
+<template> You can get the academic calendar FOR MBA INTEGRATED from the link given below 
+http://www.rknec.edu/Academics/AcademicCalender/2017-18/MBA-SemIII.pdf
+
+
+</template>
+</category>
+<category>
+<pattern>ACADEMIC CALENDAR MBA INTEGRATED FIRST SEMESTER</pattern>
+<template> You can get the academic calendar for MBA INTEGRATED FIRST SEMESTER from the link given below 
+http://www.rknec.edu/Academics/AcademicCalender/2017-18/ODD/MBA-Sem1.pdf </template>
+</category>
+<category>
+<pattern>SYLLABUS COMBINED THEORIES</pattern>
+<template> You can get the SYLLABUS OF COMBINED THEORIES from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/Sem-VI/Combinatorial%20Theories%20MAT%20301.pdf
+</template>
+</category>
+<category>
+<pattern>SYLLABUS NUMERICAL TECHNIQUES</pattern>
+<template> You can get the SYLLABUS OF NUMERICAL TECHNIQUES from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/Sem-VI/Numerical%20Techniques%20MAT%20302.pdf
+
+</template>
+</category>
+<category>
+<pattern>SYLLABUS NANOTECHNOLOGY</pattern>
+<template> You can get the SYLLABUS OF NANOTECHNOLOGY from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/Sem-VI/Nanotechnology%20PHT302.pdf
+
+
+</template>
+</category>
+<category>
+<pattern>SYLLABUS SOLID STATE LIGHTING</pattern>
+<template> You can get the SYLLABUS OF SOLID STATE LIGHTING from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/Sem-VI/Solid%20State%20Lighting%20PHT303.pdf
+
+
+
+</template>
+</category>
+<category>
+<pattern>SYLLABUS EMPLOYABILITY SKILLS ENGINEERS</pattern>
+<template> You can get the SYLLABUS OF EMPLOYABILITY SKILLS FOR ENGINEERS from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/Sem-VI/Employability%20skills%20for%20engineers%20HUT%20300-1.pdf
+
+</template>
+</category>
+<category>
+<pattern>SYLLABUS STATISTICAL BUSINESS MANAGEMENT</pattern>
+<template> You can get the SYLLABUS OF STATISTICAL METHODS FOR BUSINESS AND MANAGEMENT from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/Sem-VI/Employability%20skills%20for%20engineers%20HUT%20300-1.pdf
+
+</template>
+</category>
+<category>
+<pattern>SYLLABUS CHALLENGES OF HUMAN RESOURCE DEVELOPMENT</pattern>
+<template> You can get the SYLLABUS OF CHALLENGES OF HUMAN RESOURCE DEVELOPMENT from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/Sem-VI/Challenges%20of%20Human%20Resource%20Development%20HUT300-2.pdf
+
+
+</template>
+</category>
+<category>
+<pattern>SYLLABUS ORIENTATION GERMAN</pattern>
+<template> You can get the SYLLABUS OF ORIENTATION IN GERMAN LANGUAGE from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/Sem-VI/Orientation%20in%20German%20Language%20HUT300-4.pdf
+</template>
+</category>
+<category>
+<pattern>SYLLABUS NON CONVENTIONAL ENERGY SOURCES ENVIRONMENTAL POLLUTION
+</pattern>
+<template> You can get the SYLLABUS OF NON CONVENTIONAL ENERGY SOURCES AND ENVIRONMENTAL POLLUTION from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/Sem-VI/Orientation%20in%20German%20Language%20HUT300-4.pdf
+</template>
+</category>
+<category>
+<pattern>SYLLABUS PSYCHOLOGY PROFESSIONAL GROWTH</pattern>
+<template> You can get the SYLLABUS OF PSYCHOLOGY FOR PROFESSIONAL GROWTH  from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/Sem-VI/Psychology%20for%20Professional%20Growth%20HUT300-3.pdf
+
+</template>
+</category>
+<category>
+<pattern>SYLLABUS QUANTUM MECHANICS</pattern>
+<template> You can get the SYLLABUS OF QUANTUM MECHANICS FOR ENGINEERS  from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/Sem-VI/Psychology%20for%20Professional%20Growth%20HUT300-3.pdf
+
+</template>
+</category><category>
+<pattern>SYLLABUS FINANCIAL MANAGEMENT</pattern>
+<template> You can get the SYLLABUS OF FINANCIAL MANAGEMENT from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/Sem-VI/Financial%20Management%20MBT610-1.pdf
+
+
+</template>
+</category>
+<category>
+<pattern>SYLLABUS INNOVATION ENTREPRENEURSHIP</pattern>
+<template> You can get the SYLLABUS OF INNOVATION AND ENTREPRENEURSHIP from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/Sem-VI/Financial%20Management%20MBT610-1.pdf
+
+
+</template>
+</category>
+<category>
+<pattern>SYLLABUS ENTREPRENEURSHIP DEVELOPMENT</pattern>
+<template> You can get the SYLLABUS OF ENTREPRENEURSHIP DEVELOPMENT from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/Sem-VI/Entrepreneurship%20Development%20MBT610-2.pdf
+
+
+
+</template>
+</category>
+<category>
+<pattern>SYLLABUS OBJECT ORIENTED PROGRAMMING</pattern>
+<template> You can get the SYLLABUS OF INTRODUCTION TO OBJECT ORIENTED PROGRAMMING from the link given below 
+
+http://rknec.edu/Academics/Syllabus/2017-18/Sem-VI/Introduction%20to%20Object%20Oriented%20Programming%20MCT-300.pdf
+
+</template>
+</category>
+<category>
+<pattern>SYLLABUS FIRST YEAR </pattern>
+<template> You can get the SYLLABUS OF FIRST YEAR  from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/First%20Year%20pdf.pdf
+</template>
+</category>
+<category>
+<pattern>SYLLABUS CIVIL ENGINEERING</pattern>
+<template> You can get the SYLLABUS OF CIVIL ENGINEERING from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/BE%20Civil%20Engineering-Course%20Book%202017%20(%202017%20-%2021)1.pdf
+
+</template>
+</category>
+<category>
+<pattern>SYLLABUS COMPUTER SCIENCE ENGINEERING</pattern>
+<template> You can get the SYLLABUS OF COMPUTER SCIENCE AND ENGINEERING from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/BE%20Computer%20Science%20and%20Engineering-Course%20Book%202017%20(2017%20-%2021)1.pdf
+
+
+</template>
+</category>
+<category>
+<pattern>SYLLABUS CSE</pattern>
+<template> You can get the SYLLABUS OF COMPUTER SCIENCE AND ENGINEERING from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/BE%20Computer%20Science%20and%20Engineering-Course%20Book%202017%20(2017%20-%2021)1.pdf
+
+
+</template>
+</category>
+
+<category>
+<pattern>SYLLABUS ELECTRONICS DESIGN</pattern>
+<template> You can get the SYLLABUS OF ELECTRONICS DESIGN TECH from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/BE%20Electronics%20Design%20Technology-Course%20Book%202017%20(2017%20-%2021)1.pdf
+
+
+
+</template>
+</category>
+<category>
+<pattern>SYLLABUS ELECTRICAL ENGINEERING</pattern>
+<template> You can get the SYLLABUS OF ELECTRICAL ENGINEERING from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/BE%20Electrical%20Engineering-Course%20Book%202017%20(2017%20-%2021)1.pdf
+
+
+
+</template>
+</category>
+<category>
+<pattern>SYLLABUS ELECTRONICS ENGINEERING</pattern>
+<template> You can get the SYLLABUS OF ELECTRONICS ENGINEERING from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/BE%20Electronics%20Engg-CourseBook%20%202017%20(2017%20-%2021)1.pdf
+</template>
+</category>
+<category>
+<pattern>SYLLABUS ELECTRONICS COMMUNICATION</pattern>
+<template> You can get the SYLLABUS OF ELECTRONICS AND COMMUNICATION ENGINEERING from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/BE%20Electronic%20and%20Comunication-Course%20Book%202017%20(2017%20-%2021)1.pdf
+
+</template>
+</category>
+<category>
+<pattern>SYLLABUS INDUSTRIAL ENGINEERING</pattern>
+<template> You can get the SYLLABUS OF INDUSTRIAL ENGINEERING from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/BE%20Industrial%20Engineering-Course%20Book%202017%20(2017%20-%2021)1.pdf
+
+
+</template>
+</category>
+<category>
+<pattern>SYLLABUS INFORMATION TECHNOLOGY</pattern>
+<template> You can get the SYLLABUS OF INFORMATION TECHNOLOGY from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/B%20E%20Information%20Technology-Course%20Book%202017%20(2017%20-%2021)1.pdf
+
+
+
+</template>
+</category>
+<category>
+<pattern>SYLLABUS IT</pattern>
+<template> You can get the SYLLABUS OF INFORMATION TECHNOLOGY from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/B%20E%20Information%20Technology-Course%20Book%202017%20(2017%20-%2021)1.pdf
+
+
+
+</template>
+</category>
+
+<category>
+<pattern>SYLLABUS MECHANICAL ENGINEERING </pattern>
+<template> You can get the SYLLABUS OF MECHANICAL ENGINEERING from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/BE%20Mechanical%20Engineering-Course%20Book%202017%20(2017%20-%2021)1.pdf
+</template>
+</category>
+<category>
+<pattern>MAY I KNOW THE SYLLABUS OF MCA</pattern>
+<template> You can get the SYLLABUS OF MCA from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/MCA-CourseBook%20RCOEM%202017%20(2017%20-%2020)1.pdf
+
+</template>
+</category>
+<category>
+<pattern>SYLLABUS MBA</pattern>
+<template> You can get the SYLLABUS OF MBA from the link given below 
+
+http://rknec.edu/Academics/Syllabus/2017-18/MBA-Course%20Book%202017%20(2017%20-%2019)1.pdf
+
+</template>
+</category>
+<category>
+<pattern>SYLLABUS MBA INTEGRATED</pattern>
+<template> You can get the SYLLABUS OF MBA INTEGRATED from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/MBA%20Integrated-Course%20Book%202017%20(2017%20-%2022)1.pdf
+</template>
+</category>
+<category>
+<pattern>SYLLABUS MTECH CSE</pattern>
+<template> You can get the SYLLABUS OF M.TECH CSE from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/M%20Tech%20Computer%20Sci%20and%20Engg-Course%20Book%202017%20(2017%20-%2019)1.pdf
+
+</template>
+</category>
+<category>
+<pattern>SYLLABUS MTECH STRUCTURAL</pattern>
+<template> You can get the SYLLABUS OF M.TECH STRUCTURAL from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/M%20Tech%20Structural%20Engg-Course%20Book%202017%20(2017%20-%2019)1.pdf
+
+
+</template>
+</category>
+<category>
+<pattern>SYLLABUS MTECH PEPS</pattern>
+<template> You can get the SYLLABUS OF M.TECH PEPS from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/M%20Tech%20PEPS%20Engg-Course%20Book%202017%20(2017%20-%2019)1.pdf
+</template>
+</category>
+<category>
+<pattern>SYLLABUS MTECH INDUSTRIAL</pattern>
+<template> You can get the SYLLABUS OF M.TECH INDUSTRIAL from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/M%20Tech%20Industrial%20Engg-Course%20Book%202017%20(2017%20-%2019)1.pdf
+
+</template>
+</category>
+<category>
+<pattern>SYLLABUS MTECH HEAT POWER </pattern>
+<template> You can get the SYLLABUS OF M.TECH HEAT POWER from the link given below 
+http://rknec.edu/Academics/Syllabus/2017-18/M%20Tech%20HPE-Course%20Book%202017%20(2017%20-%2019)1.pdf
+
+
+</template>
+</category>
+</aiml>

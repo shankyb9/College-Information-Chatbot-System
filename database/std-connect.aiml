@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<aiml version="1.0">
+
+<!-- Free software (c) 2001 ALICE AI Foundation -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License -->
+<!-- as published by the Free Software Foundation. -->
+
+<meta name="author" content="Jon Baer"/>
+<meta name="language" content="en"/>
+
+<category>
+<pattern>CONNECT</pattern>
+<template>
+<think><set name="that">CONNECT</set></think>
+     Hello there and thanks for connecting!
+</template>
+</category>
+
+<category>
+<pattern>LOGOUT</pattern>
+<template>
+<think><set name="email"></set>
+<set name="pwd"></set>
+<set name="user_id"></set>
+</think>
+     I have cleared your login information from my memory! Don't worry, you can trust me anytime!
+</template>
+</category>
+
+<category>
+<pattern>USERNAME IS *</pattern>
+<template>
+<think><set name="email"><star/></set></think>
+     Hello there! Please provide me your password too!
+</template>
+</category>
+
+<category>
+<pattern>MY USERNAME IS *</pattern>
+<template>
+<think><set name="email"><star/></set></think>
+     Hello there! Please provide me your password too!
+</template>
+</category>
+
+<category>
+<pattern>PASSWORD IS *</pattern>
+<template>
+<think><set name="pwd"><star/></set></think>
+     I'll just check your entry in the College's database!
+</template>
+</category>
+
+<category>
+<pattern>MY PASSWORD IS *</pattern>
+<template>
+<think><set name="pwd"><star/></set></think>
+     I'll just check your entry in the College's database!
+</template>
+</category>
+
+</aiml>
