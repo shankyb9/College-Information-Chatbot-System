@@ -5,17 +5,29 @@ Created on Fri Mar 30 14:41:56 2018
 
 @author: Group-1
 """
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, Session, session
 import sqlite3
 import aiml
 from seminar2_progress import sntnce as s
 import random
 import re
+from mappings import map_keys
+import os
 
 app = Flask(__name__)
+app.secret_key = os.urandom(24)
+
+botName = "P8-Bot"
 
 @app.route("/")
 def home():
+    global botName
+    session['sid'] = random.randint(1,10000) #uuid.uuid4()
+    k.learn("std-startup.xml")
+    k.respond("load aiml b", session.get('sid'))
+    botName = k.getBotPredicate("name")
+    k.setPredicate('email', '', session.get('sid'))
+
     return render_template("index.html")
 
 @app.route("/get")
@@ -27,13 +39,13 @@ def get_bot_response():
 sent_check = s.Sent_Similarity()
 
 k = aiml.Kernel()
-k.learn("std-startup.xml")
-k.respond("load aiml b")
-botName = k.getBotPredicate("name")
+#k.learn("std-startup.xml")
+#k.respond("load aiml b")
+#botName = k.getBotPredicate("name")
 userName = "Anonymous"
 # a global id for authentication purpose
 user_auth_id=0;
-k.setPredicate('email', '')
+#k.setPredicate('email', '')
 GREETING = ['Hello! My name is P8-bot. I will try my best to provide you information related to our College!']
 
 DEFAULT_RESPONSES = ["I did not get you! Pardon please!","I couldn't understand what you just said! Kindly rephrase"
@@ -43,11 +55,16 @@ DEFAULT_RESPONSES = ["I did not get you! Pardon please!","I couldn't understand 
 EMPTY_RESPONSES = ["Say something! I would love to help you!","Don't hesitate. I'll answer your queries to the best"
                    " of my knowledge!","Say my friend!"]
 
+ONE_WORD_RESPONSES = ["Please elaborate your query for me to understand!", "I could not understand your context, please say more!",
+                      "Sorry, I could not get you! Please say something more for me to understand!"]
+
 AUTH_KEYWORDS = ['login', 'cgpa', 'sgpa', 'grades', 'gpa']
 
 AUTH_NOT_REQD = -1
 AUTH_NOT_SUCC = 0
 AUTH_SUCC = 1
+UNAME_REQ = 0
+PWD_REQ = 0
 
 conn = sqlite3.connect('seminar2_progress\\shrya\\db\\sqlite\\db\\pythonsqlite.db')
 
@@ -61,38 +78,40 @@ INVALID_PWD_RES = ['Invalid password! Would you like to retry or have changed yo
 
 
 def login(user=False):
-    global userName
-    if(k.getPredicate('user_id')!=''):
-        return int(k.getPredicate('user_id'))
+    global userName, UNAME_REQ, PWD_REQ
+    if(k.getPredicate('user_id', session.get('sid'))!=''):
+        return int(k.getPredicate('user_id', session.get('sid')))
     
     if(user==False):
-        return("Provide username")
-        user = get_bot_response()
-        k.setPredicate('email', user)
-        k.setPredicate('pwd','')
-        
+        UNAME_REQ = 1
+        return("Please provide me your username!")
+#        user = get_bot_response()
+#        k.setPredicate('email', user)
+#        k.setPredicate('pwd','')
+
     if(k.getPredicate('email')!=''):
-        user = k.getPredicate('email')
+        user = k.getPredicate('email', session.get('sid'))
         
     c.execute('SELECT id from LOGIN WHERE email=?', [user])   
-    pwd = k.getPredicate('pwd')
+    pwd = k.getPredicate('pwd', session.get('sid'))
 #    print(c.fetchone())
     if(c.fetchone()):
         if(pwd==''):
-            printBot("Provide password")
-            pwd = request.args.get('msg')
-            k.setPredicate('pwd', pwd)
+            PWD_REQ = 1
+            return("Please provide me your password!")
+#            pwd = request.args.get('msg')
+#            k.setPredicate('pwd', pwd)
             
         c.execute('SELECT id from LOGIN WHERE email=? and pswd=?', [user, pwd])
         idn = c.fetchone()
         if(idn is not None):
-            k.setPredicate('user_id', idn[0])
+            k.setPredicate('user_id', idn[0], session.get('sid'))
             c.execute('SELECT fname from STUD_INFO where id = ?',  idn)
             fname = c.fetchone()[0]
 #            print(fname)
             # set predicate name to fname in AIML
-            if(k.getPredicate('name') in ['Anonymous', '']):
-                k.setPredicate('name',fname)
+            if(k.getPredicate('name', session.get('sid')) in ['Anonymous', '']):
+                k.setPredicate('name',fname, session.get('sid'))
 #        print(idn)
         if(idn):
             return('You are Logged In Successfully!', idn[0])
@@ -113,17 +132,17 @@ def login(user=False):
     # printUser(K.user + inpt1)
 
 def logout():
-    k.setPredicate('user_id','')
-    k.setPredicate('email','')
-    k.setPredicate('pwd','')
+    k.setPredicate('user_id','', session.get('sid'))
+    k.setPredicate('email','', session.get('sid'))
+    k.setPredicate('pwd','', session.get('sid'))
     return("I have cleared your login information from my memory! Don't worry, you can trust me anytime!")
     
 def displayAllGPA(idn):
     c.execute('SELECT fname, sem_id from STUD_INFO where id = ?',  [idn])
     fname, sem_id = c.fetchone()
     # set predicate name to fname in AIML
-    if(k.getPredicate('name') in ['Anonymous', '']):
-        k.setPredicate('name',fname)
+    if(k.getPredicate('name', session.get('sid')) in ['Anonymous', '']):
+        k.setPredicate('name',fname, session.get('sid'))
     # find the GPA accordingly
     query = 'SELECT * from GPA_DETAILS where id = ?'
 #    print(query)
@@ -144,8 +163,8 @@ def findGPA(idn):
     c.execute('SELECT fname, sem_id from STUD_INFO where id = ?',  [idn])
     fname, sem_id = c.fetchone()
     # set predicate name to fname in AIML
-    if(k.getPredicate('name') in ['Anonymous', '']):
-        k.setPredicate('name',fname)
+    if(k.getPredicate('name', session.get('sid')) in ['Anonymous', '']):
+        k.setPredicate('name',fname, session.get('sid'))
     # find the GPA accordingly
 #    query = 'SELECT sem'+str(sem_id)+' from GPA_DETAILS where id = ?'
     query = 'SELECT * from GPA_DETAILS where id = ?'
@@ -173,8 +192,8 @@ def findGPA_sem(idn, sem_id):
     c.execute('SELECT fname from STUD_INFO where id = ?',  [idn])
     fname = c.fetchone()
     # set predicate name to fname in AIML
-    if(k.getPredicate('name') in ['Anonymous', '']):
-        k.setPredicate('name',fname)
+    if(k.getPredicate('name', session.get('sid')) in ['Anonymous', '']):
+        k.setPredicate('name',fname, session.get('sid'))
     # find the GPA accordingly
     sem = 'sem'+str(sem_id);
     query = 'SELECT '+sem+' from GPA_DETAILS where id = ?'
@@ -187,8 +206,8 @@ def findGPA_current(idn):
     c.execute('SELECT fname, sem_id from STUD_INFO where id = ?',  [idn])
     fname, sem_id = c.fetchone()
     # set predicate name to fname in AIML
-    if(k.getPredicate('name') in ['Anonymous', '']):
-        k.setPredicate('name',fname)
+    if(k.getPredicate('name', session.get('sid')) in ['Anonymous', '']):
+        k.setPredicate('name',fname, session.get('sid'))
     # find the GPA accordingly
     query = 'SELECT sem'+str(sem_id)+' from GPA_DETAILS where id = ?'
 #    print(query)
@@ -208,8 +227,8 @@ def checkIfAuthRequired(inp):
     test_inp = [word for word in test_inp if word not in ensw]
     
     if 'not' not in test_inp:
-        k.setPredicate('email', k.getPredicate('email').lower())
-        k.setPredicate('pwd', k.getPredicate('pwd').lower())
+        k.setPredicate('email', k.getPredicate('email', session.get('sid')).lower(), session.get('sid'))
+        k.setPredicate('pwd', k.getPredicate('pwd', session.get('sid')).lower(), session.get('sid'))
         for keyword in AUTH_KEYWORDS:
             if(keyword in test_inp):
                 if(('login' not in test_inp) and (k.getPredicate('email')=='')):
@@ -219,6 +238,16 @@ def checkIfAuthRequired(inp):
         logout()
     return -1
 
+def conv_mapping(inp):
+    new_inp = ''
+    keys = map_keys.keys()
+    arr = inp.split()
+    for a in arr:
+        if(a in keys):
+            new_inp = new_inp + str(map_keys[a])
+        else:
+            new_inp = new_inp + a
+    return new_inp
 
 def providePersonalInfo(inp, idn):
     p_inp = preprocess(inp).split(' ')
@@ -227,6 +256,7 @@ def providePersonalInfo(inp, idn):
     elif((('GPA' in p_inp) or ('SGPA' in p_inp)) and (('ALL' in p_inp) or ('EVERY' in p_inp) or ('EACH' in p_inp))):
         return displayAllGPA(idn)
     elif((('GPA' in p_inp) or ('SGPA' in p_inp)) and (('SEMESTER' in p_inp) or ('SEM' in p_inp)) and ('CURRENT' not in p_inp)):
+        inp = conv_mapping(inp)
         match = re.search('\\d', inp)
         if(match!=None):
             sem_id = int(match.group())
@@ -244,15 +274,15 @@ def auth_module(inp):
     global userName
     if(checkIfAuthRequired(inp)==-1):
         return -1
-    if(k.getPredicate('email')!="" and k.getPredicate("pwd")!=""):
-        user = k.getPredicate('email')
-        pwd = k.getPredicate('pwd')
+    if(k.getPredicate('email', session.get('sid'))!="" and k.getPredicate("pwd", session.get('sid'))!=""):
+        user = k.getPredicate('email', session.get('sid'))
+        pwd = k.getPredicate('pwd', session.get('sid'))
         c.execute('SELECT id from LOGIN WHERE email=? and pswd=?', [user, pwd])
         idn = c.fetchone()
         if(idn is not None):
-            k.setPredicate('user_id', idn[0])
+            k.setPredicate('user_id', idn[0], session.get('sid'))
             
-    if(k.getPredicate('user_id')!=""):
+    if(k.getPredicate('user_id', session.get('sid'))!=""):
         check_inp = inp.lower().split(' ')
         if(('login' in check_inp) and ('not' not in check_inp)):
             return('You are already logged in!')
@@ -262,8 +292,8 @@ def auth_module(inp):
         return idn
     elif(idn!=None):
         info = providePersonalInfo(inp, idn)
-        if(k.getPredicate('name')!=''):
-            userName = k.getPredicate('name')
+        if(k.getPredicate('name', session.get('sid'))!=''):
+            userName = k.getPredicate('name', session.get('sid'))
         return info
     else:
         return("Operation aborted")
@@ -308,8 +338,18 @@ def preprocess(inp):
 #    print(inp)
     return inp
 
+def isKeyword(word):
+    f = open('database/questions.txt','r')
+    keywords = f.read().split()
+#    print(keywords)
+    if(word in keywords):
+        return True
+    else:
+        return False
+
 def start(inp):
-    global userName
+    global userName,UNAME_REQ,PWD_REQ
+    print(session.get('sid'))
     # tasks: remove punctuation from input or make it get parsed, do something when no match is found; removed last period to end sentence
     p_inp = preprocess(inp)
     # function for transfer to authentication module
@@ -318,11 +358,26 @@ def start(inp):
         return auth
     
     inp = p_inp
-    response = k.respond(inp)
+    response = k.respond(inp, session.get('sid'))
     if(response=='No match'):
+        # to invalidate wrong one-word input
+        if(len(inp.split(" "))==1):
+            if(isKeyword(inp)==False):
+                if(UNAME_REQ==1):
+                    k.setPredicate('email',inp, session.get('sid'))
+                    UNAME_REQ = 0
+                    PWD_REQ = 1
+                    return "Please provide me your password too!"
+                if(PWD_REQ==1):
+                    k.setPredicate('pwd',inp, session.get('sid'))
+                    PWD_REQ = 0
+                    return "I'll now be able to answer your GEMS related queries if your credentials are valid! Otherwise you will have to provide your credentials again!"
+                
+                return(random.choice(ONE_WORD_RESPONSES))
+                
         inp = matchingSentence(inp)
 #        print(inp)
-        response = k.respond(inp[0])
+        response = k.respond(inp[0], session.get('sid'))
         confidence = inp[1]
         if(confidence < 0.5):
             log = open('database/invalidated_log.txt','a')
@@ -330,17 +385,20 @@ def start(inp):
             log.close()
             return(random.choice(DEFAULT_RESPONSES))
         else:
+            response = re.sub('( )?(http:[%\-_/a-zA-z0-9\\.]*)','<a href="\\2">\\2</a>',response)
+#            print(response)
             return(response)
     elif(response==""):
         return(random.choice(EMPTY_RESPONSES))
     else: 
+        response = re.sub('( )?(http:[%\-_/a-zA-z0-9\\.]*)','<a href="\\2">\\2</a>',response)
         return (response)
     
-    if(k.getPredicate('name')!=""):
-        userName = k.getPredicate('name')
+    if(k.getPredicate('name', session.get('sid'))!=""):
+        userName = k.getPredicate('name', session.get('sid'))
     else:
-        k.setPredicate('name','Anonymous')
-        userName = k.getPredicate('name')    
+        k.setPredicate('name','Anonymous', session.get('sid'))
+        userName = k.getPredicate('name', session.get('sid'))    
 
 
 
@@ -348,3 +406,4 @@ def start(inp):
 
 if __name__ == "__main__":
     app.run()
+    
