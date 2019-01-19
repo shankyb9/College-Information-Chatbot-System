@@ -66,10 +66,6 @@ AUTH_SUCC = 1
 UNAME_REQ = 0
 PWD_REQ = 0
 
-conn = sqlite3.connect('seminar2_progress\\shrya\\db\\sqlite\\db\\pythonsqlite.db')
-
-c = conn.cursor()
-
 INVALID_UNAME_RES = ['Invalid username! Would you like to retry or have changed your mood?',
                      'Username does not exist! Would you like to retry or have changed your mood?',
                      'I suppose you forgot your username! Would you like to retry or have changed your mood?']
@@ -79,11 +75,17 @@ INVALID_PWD_RES = ['Invalid password! Would you like to retry or have changed yo
 
 def login(user=False):
     global userName, UNAME_REQ, PWD_REQ
+    conn = sqlite3.connect('seminar2_progress\\shrya\\db\\sqlite\\db\\pythonsqlite.db')
+    c = conn.cursor()
     if(k.getPredicate('user_id', session.get('sid'))!=''):
+        c.close()
+        conn.close()
         return int(k.getPredicate('user_id', session.get('sid')))
     
     if(user==False):
         UNAME_REQ = 1
+        c.close()
+        conn.close()
         return("Please provide me your username!")
 #        user = get_bot_response()
 #        k.setPredicate('email', user)
@@ -98,6 +100,8 @@ def login(user=False):
     if(c.fetchone()):
         if(pwd==''):
             PWD_REQ = 1
+            c.close()
+            conn.close()
             return("Please provide me your password!")
 #            pwd = request.args.get('msg')
 #            k.setPredicate('pwd', pwd)
@@ -113,6 +117,8 @@ def login(user=False):
             if(k.getPredicate('name', session.get('sid')) in ['Anonymous', '']):
                 k.setPredicate('name',fname, session.get('sid'))
 #        print(idn)
+        c.close()
+        conn.close()
         if(idn):
             return('You are Logged In Successfully!', idn[0])
         else:
@@ -123,6 +129,8 @@ def login(user=False):
             else:
                 return None
     else:
+        c.close()
+        conn.close()
         printBot(random.choice(INVALID_UNAME_RES))
         choice = preprocess(input(userName+": "))
         if('RETRY' in choice and 'NOT' not in choice):
@@ -138,6 +146,8 @@ def logout():
     return("I have cleared your login information from my memory! Don't worry, you can trust me anytime!")
     
 def displayAllGPA(idn):
+    conn = sqlite3.connect('seminar2_progress\\shrya\\db\\sqlite\\db\\pythonsqlite.db')
+    c = conn.cursor()
     c.execute('SELECT fname, sem_id from STUD_INFO where id = ?',  [idn])
     fname, sem_id = c.fetchone()
     # set predicate name to fname in AIML
@@ -156,10 +166,14 @@ def displayAllGPA(idn):
             break;
         res_list["Sem-"+str(count)] = sgpa
 #    print(result)
+    c.close()
+    conn.close()
     return("Your semester wise sgpa is as follows: " +str(res_list))
     
     
 def findGPA(idn):
+    conn = sqlite3.connect('seminar2_progress\\shrya\\db\\sqlite\\db\\pythonsqlite.db')
+    c = conn.cursor()
     c.execute('SELECT fname, sem_id from STUD_INFO where id = ?',  [idn])
     fname, sem_id = c.fetchone()
     # set predicate name to fname in AIML
@@ -172,6 +186,8 @@ def findGPA(idn):
     c.execute(query,  [idn])
     result = c.fetchall()
 #    print(result)
+    c.close()
+    conn.close()
     return findCGPA(result[0][1:])
     
 def findCGPA(sgpa):
@@ -189,6 +205,8 @@ def findCGPA(sgpa):
     return('Your CGPA is '+str(cgpa))
 
 def findGPA_sem(idn, sem_id):
+    conn = sqlite3.connect('seminar2_progress\\shrya\\db\\sqlite\\db\\pythonsqlite.db')
+    c = conn.cursor()
     c.execute('SELECT fname from STUD_INFO where id = ?',  [idn])
     fname = c.fetchone()
     # set predicate name to fname in AIML
@@ -200,9 +218,13 @@ def findGPA_sem(idn, sem_id):
 #    print(query)
     c.execute(query,  [idn])
     result = c.fetchall()[0][0]
+    c.close()
+    conn.close()
     return('Your SGPA of '+sem+ " is "+ str(result))
     
 def findGPA_current(idn):
+    conn = sqlite3.connect('seminar2_progress\\shrya\\db\\sqlite\\db\\pythonsqlite.db')
+    c = conn.cursor()
     c.execute('SELECT fname, sem_id from STUD_INFO where id = ?',  [idn])
     fname, sem_id = c.fetchone()
     # set predicate name to fname in AIML
@@ -213,6 +235,8 @@ def findGPA_current(idn):
 #    print(query)
     c.execute(query,  [idn])
     result = c.fetchall()[0][0]
+    c.close()
+    conn.close()
     if(result==0.0):
         return('Results are not out yet!!')
     else:
@@ -272,6 +296,8 @@ def providePersonalInfo(inp, idn):
 
 def auth_module(inp):
     global userName
+    conn = sqlite3.connect('seminar2_progress\\shrya\\db\\sqlite\\db\\pythonsqlite.db')
+    c = conn.cursor()
     if(checkIfAuthRequired(inp)==-1):
         return -1
     if(k.getPredicate('email', session.get('sid'))!="" and k.getPredicate("pwd", session.get('sid'))!=""):
@@ -287,7 +313,8 @@ def auth_module(inp):
         if(('login' in check_inp) and ('not' not in check_inp)):
             return('You are already logged in!')
     idn = login()
-    
+    c.close()
+    conn.close()
     if(type(idn)==str):
         return idn
     elif(idn!=None):
