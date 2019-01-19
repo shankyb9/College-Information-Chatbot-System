@@ -122,8 +122,8 @@ def login(user=False):
         if(idn):
             return('You are Logged In Successfully!', idn[0])
         else:
-            return(random.choice(INVALID_PWD_RES))
-            choice = input(userName+": ")
+            printBot(random.choice(INVALID_PWD_RES))
+            choice = preprocess(input(userName+": "))
             if('retry' in choice and 'not' not in choice):
                 return login(user)
             else:
